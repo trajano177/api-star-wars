@@ -4,7 +4,7 @@ import foto from '../assets/star-wars.svg';
 export function Home() {
     return(
         <div className={styles.card}>
-            <img src={foto} alt="" />
+            <img src={foto} />
         </div>
     )
 }
