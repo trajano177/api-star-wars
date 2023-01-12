@@ -1,17 +1,23 @@
 import styles from './card.module.css';
 import { api } from '../App';
-import foto from '../assets/star-wars-2.svg';
 
 
 interface cardProps {
     person: api
+    idPerson: number
 }
 
-export function Card({ person }: cardProps) {
+export function Card({ person, idPerson }: cardProps) {
     return (
-        <div className={styles.cards}>
-            <h3 style={{color:'white'}}>{person.name}</h3>
-            <img src={foto} />
-        </div>
+        <>
+        
+            <div className={styles.cards}>
+                <img src={`./person/${idPerson}.jpg`} />
+                <h3 style={{ color: 'white' }}>{person.name}</h3>
+                <p style={{ color: 'white' }}>{person.birth_year}</p>
+
+            </div>
+        </>
+
     )
 }
