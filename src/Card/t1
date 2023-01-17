@@ -1,0 +1,25 @@
+ <!-- <Dialog.Portal>
+                        <Dialog.Overlay className="dialogOverlay" />
+                        <Dialog.Content className="dialogTitle">
+                            <Dialog.Title className="dialogTitle">
+                                <h1>{person.name}</h1>
+                            </Dialog.Title>
+
+                            <Dialog.Description className="dialogDescription">
+                                <img src={`./person/${idPerson}.png`} />
+                                <p>{person.birth_year}</p>
+                            </Dialog.Description>
+
+
+                            <div style={{ display: 'flex', marginTop: 25, justifyContent: 'flex-end' }}>
+                                <Dialog.Close asChild>
+                                    <button className="button-green">Exit</button>
+                                </Dialog.Close>
+                            </div>
+
+                            <Dialog.Close asChild>
+                                <button className="IconButton" arial-label="Close">
+                                    close
+                                </button>
+                            </Dialog.Close>
+                        </Dialog.Content> -->

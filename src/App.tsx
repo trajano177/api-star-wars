@@ -4,6 +4,7 @@ import { Card } from './Card/card';
 import './global.css';
 import styles from './Card/card.module.css';
 import axios from 'axios';
+import { Popover } from '@radix-ui/react-popover';
 
 const url = `https://swapi.dev/api/people/`;
 export interface api {
@@ -16,31 +17,31 @@ export interface api {
   birth_year: string;
 }
 export function App() {
-  
-  const [people, setPeople] = useState<api[]>([]);
- 
-   async function fetchData() {
-      const res = await (await (axios.get(url).then())).data;
 
-      setPeople(res.results);
-    }
-    useEffect(() => {
+  const [people, setPeople] = useState<api[]>([]);
+
+  async function fetchData() {
+    const res = await (await (axios.get(url).then())).data;
+
+    setPeople(res.results);
+  }
+  useEffect(() => {
     fetchData()
   }, []);
 
-    console.log('pessoas', people);
+  console.log('pessoas', people);
 
   return <div className="app">
     <>
       <Home />
-     
+
       <div className={styles.map}>
         {people.map((people, i) => {
           return (
             <Card key={i} person={people} idPerson={i} />
           )
         })
-        } 
+        }
       </div>
     </>
   </div>
