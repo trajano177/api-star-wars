@@ -44,3 +44,35 @@
   justify-content: center;
   padding: 2rem 5rem 2rem 5rem;
 }
+
+.cards h3 {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+}
+
+.cards p {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+
+  .cards {
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .map {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+   
+  }
+}
