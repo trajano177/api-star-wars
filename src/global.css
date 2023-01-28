@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
@@ -191,7 +192,7 @@ html {
     696px 1654px #fff, 1144px 60px #fff;
 }
 
-#stars:after{
+#stars:after {
   content: '';
   position: absolute;
   top: 2000px;
@@ -435,7 +436,7 @@ html {
     986px 1529px #fff, 1667px 1137px #fff;
 }
 
-#stars2:after{
+#stars2:after {
   content: '';
   position: absolute;
   top: 2000px;
@@ -572,8 +573,3 @@ html {
     transform: translateY(-2000px);
   }
 }
-
-
-
-
-
